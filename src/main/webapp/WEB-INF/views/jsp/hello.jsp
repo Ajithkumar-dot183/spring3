@@ -41,22 +41,22 @@
  
   <div class="row">
 	<div class="col-md-4">
-		<h2>Heading</h2>
-		<p>ABC</p>
+		<h2>FirstName</h2>
+		<p>Pabba</p>
 		<p>
 			<a class="btn btn-default" href="#" role="button">View details</a>
 		</p>
 	</div>
 	<div class="col-md-4">
-		<h2>Heading</h2>
-		<p>ABC</p>
-		<p>
-			<a class="btn btn-default" href="#" role="button">View details</a>
-		</p>
-	</div>
-	<div class="col-md-4">
-		<h2>Heading</h2>
+		<h2>MiddleName</h2>
 		<p>Ajith</p>
+		<p>
+			<a class="btn btn-default" href="#" role="button">View details</a>
+		</p>
+	</div>
+	<div class="col-md-4">
+		<h2>LastName</h2>
+		<p>Kumar</p>
 		<p>
 			<a class="btn btn-default" href="#" role="button">View details</a>
 		</p>
