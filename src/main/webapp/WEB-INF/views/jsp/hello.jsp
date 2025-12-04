@@ -56,7 +56,7 @@
 	</div>
 	<div class="col-md-4">
 		<h2>Heading</h2>
-		<p>ABC</p>
+		<p>Ajith</p>
 		<p>
 			<a class="btn btn-default" href="#" role="button">View details</a>
 		</p>
@@ -66,7 +66,7 @@
  
   <hr>
   <footer>
-	<p>&copy; Mkyong.com 2015</p>
+	<p>&copy; AkGoud.com 2015</p>
   </footer>
 </div>
  
