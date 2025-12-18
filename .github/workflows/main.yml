@@ -44,4 +44,6 @@ jobs:
             -DgroupId=com.mkyong \
             -DartifactId=spring3-mvc-maven-xml-hello-world \
             -Dversion=1.0-SNAPSHOT \
-            -Dpackaging=war
+            -Dpackaging=war \
+            -Dusername=admin \
+            -Dpassword=admin123
