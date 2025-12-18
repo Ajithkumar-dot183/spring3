@@ -30,6 +30,6 @@ jobs:
       - name: Deploy to Tomcat
         run: |
           echo "Deploying WAR to Tomcat..."
-          curl -v -u admin:admin \
+           curl -v -u ${{ secrets.TOMCAT_USERNAME }}:${{ secrets.TOMCAT_PASSWORD }} \
           -T /home/ec2-user/actions-runner/_work/spring3/spring3/target/spring3-mvc-maven-xml-hello-world-1.0-SNAPSHOT.war \
           "http://ec2-3-90-210-247.compute-1.amazonaws.com:8081/manager/text/deploy?path=/spring&update=true"
