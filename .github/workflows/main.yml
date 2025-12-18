@@ -34,16 +34,13 @@ jobs:
           -T /home/ec2-user/actions-runner/_work/spring3/spring3/target/spring3-mvc-maven-xml-hello-world-1.0-SNAPSHOT.war \
           "http://ec2-3-90-210-247.compute-1.amazonaws.com:8081/manager/text/deploy?path=/spring&update=true"
 
-      # Step 5: Publish to Nexus manually
       - name: Publish WAR to Nexus
         run: |
           mvn deploy:deploy-file \
-            -Durl=http://100.31.110.202:8081/repository/github-spring/ \
-            -DrepositoryId=nexus \
             -Dfile=/home/ec2-user/actions-runner/_work/spring3/spring3/target/spring3-mvc-maven-xml-hello-world-1.0-SNAPSHOT.war \
             -DgroupId=com.mkyong \
             -DartifactId=spring3-mvc-maven-xml-hello-world \
             -Dversion=1.0-SNAPSHOT \
             -Dpackaging=war \
-            -Dusername=admin \
-            -Dpassword=admin123
+            -DrepositoryId=github-spring \
+            -Durl=http://100.31.110.202:8081/repository/github-spring/
