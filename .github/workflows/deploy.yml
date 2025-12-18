@@ -3,7 +3,7 @@ name: dynamically getting groupid artifactid
 on:
   push:
     branches:
-      - master   # change if needed
+      - main   # change if needed
 
 jobs:
   build-and-deploy:
