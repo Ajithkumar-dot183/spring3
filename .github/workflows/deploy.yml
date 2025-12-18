@@ -1,4 +1,4 @@
-name: Build and Deploy to Tomcat
+name: dynamically getting groupid artifactid
 
 on:
   push:
@@ -23,11 +23,11 @@ jobs:
         run: mvn clean package
 
       - name: Get Maven Coordinates
-      id: coords
-      run: |
-        GROUP_ID=$(mvn help:evaluate -Dexpression=project.groupId -q -DforceStdout)
-        ARTIFACT_ID=$(mvn help:evaluate -Dexpression=project.artifactId -q -DforceStdout)
-        VERSION=$(mvn help:evaluate -Dexpression=project.version -q -DforceStdout)
-        echo "groupId=$GROUP_ID" >> $GITHUB_ENV
-        echo "artifactId=$ARTIFACT_ID" >> $GITHUB_ENV
-        echo "version=$VERSION" >> $GITHUB_ENV
+        id: coords
+        run: |
+          GROUP_ID=$(mvn help:evaluate -Dexpression=project.groupId -q -DforceStdout)
+          ARTIFACT_ID=$(mvn help:evaluate -Dexpression=project.artifactId -q -DforceStdout)
+          VERSION=$(mvn help:evaluate -Dexpression=project.version -q -DforceStdout)
+          echo "groupId=$GROUP_ID" >> $GITHUB_ENV
+          echo "artifactId=$ARTIFACT_ID" >> $GITHUB_ENV
+          echo "version=$VERSION" >> $GITHUB_ENV
