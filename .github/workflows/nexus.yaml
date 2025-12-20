@@ -36,7 +36,7 @@ jobs:
             -DartifactId=spring3-mvc-maven-xml-hello-world \
             -Dversion=1.0-SNAPSHOT \
             -Dpackaging=war \
-            -DrepositoryId=nexus \
+            -DrepositoryId=githubactions-spring3 \
             -Durl=http://18.215.176.79:8081/repository/githubactions-spring3/ \
             -Dusername=${{ secrets.NEXUS_USERNAME }} \
             -Dpassword=${{ secrets.NEXUS_PASSWORD }}
